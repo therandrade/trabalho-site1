@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dbdbf7;
+    color: #000000;
+    text-align: center;
+}
+
+.imagem-pequena {
+    position: absolute;
+    top: 10px;
+    left: 20px; 
+    width: 140px;
+    height: 83px;
+    z-index: 100; 
+}
+
+.barra-pesquisa {
+    position: absolute;
+    top: 25px;
+    left: 180px;
+    width: 480px;
+    height: 50px;
+    background-color: #ebebeb;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 150;
+}
+
+.input-pesquisa {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ebebeb;
+    color: #000;
+}
+
+
+.btn-fechar {
+    background: none; 
+    border: none;
+    color: #9747ff;
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease; 
+}
+
+
+.btn-fechar:hover {
+    background-color: #d1c4e9; 
+}
+
+.barra-horizontal {
+    position: relative;
+    width: 100%;
+    height: 110px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    z-index: 10; 
+}
+
+.imagem-decorativa {
+    width: 100%;
+    height: auto;
+    margin-top: -20px;
+}
+
+.palavras-centralizadas {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.palavras-centralizadas span {
+    font-size: 24px;
+    color: #FF914D;
+    font-weight: bold;
+}
+
+.links-container {
+    position: absolute;
+    top: 38px; 
+    left: 700px;
+    display: flex;
+    gap: 35px;
+    z-index: 200;
+}
+
+.login-link {
+    font-size: 14px;
+    color: #9747ff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 5px;
+    display: flex; 
+    align-items: center; 
+    z-index: 200;
+    margin-left: -20px; 
+}
+
+.login-link i {
+    margin-right: 8px; 
+}
+
+.login-link:hover {
+    color: #FF914D;
+}
+
+.favoritos-link {
+    font-size: 14px;
+    color: #9747ff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 5px;
+    display: flex; 
+    align-items: center;
+    z-index: 200; 
+}
+
+.favoritos-link i {
+    color: #9747ff;
+    margin-right: 8px;
+    transition: color 0.3s ease; 
+}
+
+.favoritos-link:hover {
+    color: #FF914D; 
+}
+
+.favoritos-link:hover i {
+    color: #FF914D; 
+}
+
+.sacola-link {
+    font-size: 14px;
+    color: #9747ff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 5px;
+    display: flex; 
+    align-items: center; 
+    z-index: 200;
+}
+
+.sacola-link i {
+    color: #9747ff; 
+    margin-right: 8px;
+    transition: color 0.3s ease; 
+}
+
+.sacola-link:hover {
+    color: #FF914D; 
+}
+
+.sacola-link:hover i {
+    color: #FF914D;
+}
+
+#popup-sacola {
+    display: none;
+    position: absolute;
+    top: 50px; 
+    right: -50px; 
+    width: 250px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 500;
+}
+
+.popup-sacola h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #9747ff;
+}
+
+.popup-sacola p {
+    margin-top: 10px;
+    text-align: left;
+}
+
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #FF914D;
+    font-size: 24px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+h2:hover {
+    color: #9747ff;
+    font-size: 26px;
+}
+
+.produtos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.produto {
+    background: #ebebeb;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block; 
+    padding: 5px 5px; 
+    background-color: rgb(221, 0, 0); 
+    color: white; 
+    text-align: center; 
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer;
+    text-decoration: none; 
+    font-size: 14px; 
+    transition: background-color 0.3s;
+    margin: 0; 
+}
+
+.btn:hover {
+    background-color: rgb(180, 3, 3); 
+}
+
+
+footer {
+    background: #7a1994;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.amor-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    gap: 80px;
+}
+
+.amor {
+    color: #ff0000;
+    font-size: 17px !important; 
+    padding: 5px 10px; 
+    display: inline-block; 
+}
+
+.icone-opcoes {
+    position: absolute; 
+    top: 0px;
+    right: -30px; 
+    font-size: 26px; 
+    color: #9747ff; 
+    cursor: pointer;
+    
+}
+
+.icone-opcoes:hover {
+    color: #FF914D; 
+}
+
+.popup {
+    display: none; 
+    position: absolute;
+    top: 100px; 
+    right: 0; 
+    width: 200px; 
+    height: auto; 
+    background-color: white; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    z-index: 300;
+    padding: 20px; 
+}
+
+.popup h2 {
+    margin: 0; 
+    text-align: left; 
+}
+
+.popup p {
+    text-align: left; 
+}
+
+.ver-todos {
+    font-weight: bold; 
+    text-decoration: underline; 
+    color: #9747ff; 
+    cursor: pointer; 
+}
+
+.underline {
+    text-decoration: underline; 
+    color: #000; 
+}
+
+.popup a {
+    color: #000000; 
+    text-decoration: underline; 
+    cursor: pointer; 
+}
+
+.popup a:hover {
+    color: #FF914D; 
+}
+
+
+#popup-pesquisa {
+    display: none; 
+    position: absolute; 
+    top: 90px; 
+    left: 180px; 
+    width: 300px; 
+    background-color: white; 
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    z-index: 300; 
+    padding: 20px; 
+    font-size: 13px; 
+}
+
+.popup-conteudo {
+    
+    text-align: left; 
+}
+
+.popup-conteudo h2 {
+    margin: 0; 
+    font-size: 14px; 
+    color: #9747ff; 
+    font-size: 16px; 
+}
+
+.underline {
+    text-decoration: underline; 
+    color: #000; 
+    cursor: pointer; 
+    font-size: 13px; 
+}
+
+.underline:hover {
+    color: #FF914D; 
+}
+
+.categoria {
+    display: flex; 
+    align-items: center; 
+    margin: 10px 0; 
+    font-size: 13px; 
+}
+
+.numero {
+    background-color: #FF914D; 
+    border-radius: 50%; 
+    color: white; 
+    width: 30px; 
+    height: 30px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin-right: 10px; 
+    font-weight: bold; 
+}

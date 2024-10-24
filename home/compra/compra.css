@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dbdbf7;
+    color: #000000;
+    text-align: center;
+}
+
+.imagem-pequena {
+    position: absolute;
+    top: 10px;
+    left: 20px; 
+    width: 140px;
+    height: 83px;
+    z-index: 100; 
+}
+
+.barra-pesquisa {
+    position: absolute;
+    top: 25px;
+    left: 180px;
+    width: 480px;
+    height: 50px;
+    background-color: #ebebeb;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 150;
+}
+
+.input-pesquisa {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ebebeb;
+    color: #000;
+}
+
+
+.btn-fechar {
+    background: none; 
+    border: none;
+    color: #9747ff;
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease; 
+}
+
+
+.btn-fechar:hover {
+    background-color: #d1c4e9; 
+}
+
+.barra-horizontal {
+    position: relative;
+    width: 100%;
+    height: 110px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    z-index: 10; 
+}
+
+.links-container {
+    position: absolute;
+    top: 38px; 
+    left: 700px;
+    display: flex;
+    gap: 35px;
+    z-index: 200;
+}
+
+.login-link {
+    font-size: 14px;
+    color: #9747ff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 5px;
+    display: flex; 
+    align-items: center; 
+    z-index: 200;
+    margin-left: -20px; 
+}
+
+.login-link i {
+    margin-right: 8px; 
+}
+
+.login-link:hover {
+    color: #FF914D;
+}
+
+.favoritos-link {
+    font-size: 14px;
+    color: #9747ff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 5px;
+    display: flex; 
+    align-items: center;
+    z-index: 200; 
+}
+
+.favoritos-link i {
+    color: #9747ff;
+    margin-right: 8px;
+    transition: color 0.3s ease; 
+}
+
+.favoritos-link:hover {
+    color: #FF914D; 
+}
+
+.favoritos-link:hover i {
+    color: #FF914D; 
+}
+
+.sacola-link {
+    font-size: 14px;
+    color: #9747ff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 5px;
+    display: flex; 
+    align-items: center; 
+    z-index: 200;
+}
+
+.sacola-link i {
+    color: #9747ff; 
+    margin-right: 8px;
+    transition: color 0.3s ease; 
+}
+
+.sacola-link:hover {
+    color: #FF914D; 
+}
+
+.sacola-link:hover i {
+    color: #FF914D;
+}
+
+#popup-sacola {
+    display: none;
+    position: absolute;
+    top: 50px; 
+    right: -50px; 
+    width: 250px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 500;
+}
+
+.popup-sacola h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #9747ff;
+}
+
+.popup-sacola p {
+    margin-top: 10px;
+    text-align: left;
+}
+
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #FF914D;
+    font-size: 24px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+h2:hover {
+    color: #9747ff;
+    font-size: 26px;
+}
+
+footer {
+    background: #7a1994;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.icone-opcoes {
+    position: absolute; 
+    top: 0px;
+    right: -30px; 
+    font-size: 26px; 
+    color: #9747ff; 
+    cursor: pointer;
+    
+}
+
+.icone-opcoes:hover {
+    color: #FF914D; 
+}
+
+.popup {
+    display: none; 
+    position: absolute;
+    top: 100px; 
+    right: 0; 
+    width: 200px; 
+    height: auto; 
+    background-color: white; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    z-index: 300;
+    padding: 20px; 
+}
+
+.popup h2 {
+    margin: 0; 
+    text-align: left; 
+}
+
+.popup p {
+    text-align: left; 
+}
+
+.ver-todos {
+    font-weight: bold; 
+    text-decoration: underline; 
+    color: #9747ff; 
+    cursor: pointer; 
+}
+
+.underline {
+    text-decoration: underline; 
+    color: #000; 
+}
+
+.popup a {
+    color: #000000; 
+    text-decoration: underline; 
+    cursor: pointer; 
+}
+
+.popup a:hover {
+    color: #FF914D; 
+}
+
+
+#popup-pesquisa {
+    display: none; 
+    position: absolute; 
+    top: 90px; 
+    left: 180px; 
+    width: 300px; 
+    background-color: white; 
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    z-index: 300; 
+    padding: 20px; 
+    font-size: 13px; 
+}
+
+.popup-conteudo {
+    
+    text-align: left; 
+}
+
+.popup-conteudo h2 {
+    margin: 0; 
+    font-size: 14px; 
+    color: #9747ff; 
+    font-size: 16px; 
+}
+
+.underline {
+    text-decoration: underline; 
+    color: #000; 
+    cursor: pointer; 
+    font-size: 13px; 
+}
+
+.underline:hover {
+    color: #FF914D; 
+}
+
+.categoria {
+    display: flex; 
+    align-items: center; 
+    margin: 10px 0; 
+    font-size: 13px; 
+}
+
+.numero {
+    background-color: #FF914D; 
+    border-radius: 50%; 
+    color: white; 
+    width: 30px; 
+    height: 30px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin-right: 10px; 
+    font-weight: bold; 
+}
+
+.produto-container {
+    display: flex; /* Layout em linha para imagem e compra */
+    justify-content: space-between; /* Espaço entre imagem e compra */
+    padding: 40px; 
+    gap: 100px; /* Espaço entre imagem e informações */
+    width: 100%;
+    max-width: 1200px; /* Largura máxima */
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    margin: 40px auto; /* Centraliza o container */
+    height: 1000px;
+}
+
+.descricao-container {
+    margin: 40px auto; /* Centraliza a descrição abaixo do produto */
+    padding: 20px; /* Adiciona algum padding */
+    border: 1px solid #ddd; /* Borda para o contêiner de descrição */
+    max-width: 1200px; /* Largura máxima igual ao produto */
+}
+
+.titulo-descricao {
+    color: #000; /* Cor padrão do texto */
+    text-decoration: none; /* Remove sublinhado, se houver */
+    transition: none; /* Remove qualquer transição */
+}
+
+/* Removendo animação ou efeito de hover */
+.titulo-descricao:hover {
+    color: #000; /* Mantém a cor padrão ao passar o mouse */
+    cursor: default; /* Muda o cursor para padrão ao passar o mouse */
+}
+
+.imagem-produto {
+    flex-shrink: 0; /* Impede que a imagem encolha */
+    width: 38%; /* Define uma largura relativa da imagem (ajustável) */
+}
+
+.imagem-produto img {
+    width: 100%; /* A imagem se adapta ao container */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.produto-compra {
+    flex-grow: 1; /* Faz o conteúdo textual ocupar o espaço restante */
+    text-align: left; /* Garante que o texto esteja alinhado à esquerda */
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+
+.produto-compra h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 15px 0 15px -50px; /* Ajuste o valor negativo conforme necessário */
+    padding-left: 10px; /* Ajuste o valor conforme necessário */
+}
+
+
+.produto-compra .ref {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.produto-compra .preco {
+    font-size: 22px;
+    color: #e53935;
+    margin-bottom: 10px;
+}
+
+.produto-compra .preco strong {
+    font-size: 26px;
+}
+
+.produto-compra .desconto {
+    font-size: 14px;
+    color: #43a047;
+    margin-bottom: 20px;
+}
+
+.selecao {
+    margin-bottom: 20px;
+}
+
+.selecao label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cor-opcao, .tamanho-opcao {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.cor-opcao:hover, .tamanho-opcao:hover {
+    background-color: #e0e0e0;
+}
+
+.comprar-btn {
+    background-color: #ca0000;
+    color: white;
+    border: none;
+    padding: 15px 210px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comprar-btn:hover {
+    background-color: #ab0000;
+}
+.selecionado {
+    border: 2px solid #ff5722;
+    background-color: #ffe0b2;
+}

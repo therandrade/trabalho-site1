@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-section">
+            <div class="create-account">
+                <h2>Quero criar uma conta</h2>
+                <form action="../index.html" method="GET"> <!-- Mude para o arquivo desejado -->
+                    <label for="email-create">E-mail</label>
+                    <input type="email" id="email-create" placeholder="Digite seu e-mail" required>
+                    <label for="password-login">Senha</label>
+                    <input type="password" id="password-login" placeholder="Digite sua senha" required>
+                    <button type="submit" class="btn">Continuar</button>
+                </form>
+                <a href="#">Dúvidas? <span>fale conosco</span></a>
+            </div>
+
+            <div class="vertical-divider"></div>
+
+            <div class="login-account">
+                <h2>Já sou cliente</h2>
+                <form action="../index.html" method="GET"> <!-- Mude para o arquivo desejado -->
+                    <label for="email-login">E-mail ou CPF</label>
+                    <input type="email" id="email-login" placeholder="Digite seu e-mail ou CPF" required>
+                    <label for="password-login">Senha</label>
+                    <input type="password" id="password-login" placeholder="Digite sua senha" required>
+                    <button type="submit" class="btn">Continuar</button>
+                </form>
+                <a href="#">Esqueci minha senha</a>
+            </div>
+            
+        </div>
+
+        <div class="social-login">
+            <p>Use sua rede social para se conectar*</p>
+            <button class="btn-social">Facebook</button>
+            <button class="btn-social">Fazer login com Google</button>
+        </div>
+    </div>
+</body>
+</html>

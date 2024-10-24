@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pequenos Encantos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <img src="IMAGEM PEQUENA/IMAGEM_PEQUENA.png" alt="Imagem Pequena" class="imagem-pequena">
+
+    <div class="barra-pesquisa" onclick="togglePesquisaPopup()">
+        <input type="text" class="input-pesquisa" placeholder="Buscar...">
+        <button class="btn-fechar">X</button>
+    </div>
+
+    <div class="links-container">
+        <div class="login-link">
+            <i class="fas fa-user"></i>
+            <a href="home/login.html"  style="color: inherit; text-decoration: none;">
+                <span>ENTRE OU CADASTRE-SE</span>
+            </a>
+        </div>
+               
+
+        <div class="favoritos-link">
+            <i class="fas fa-heart"></i>
+            <a href="home/login.html"  style="color: inherit; text-decoration: none;">
+            <span>FAVORITOS</span>
+        </a>
+        </div>
+        
+        <div class="sacola-link" onclick="toggleSacolaPopup()">
+            <i class="fas fa-shopping-bag"></i>
+            <span>MINHA SACOLA</span>
+        </div>
+        
+        <div id="popup-sacola" class="popup-sacola">
+            <div class="popup-conteudo">
+                <h2>Minha Sacola</h2>
+                <p>Sua sacola está vazia.</p>
+            </div>
+        </div>
+        
+        
+
+        <div class="icone-opcoes" onclick="togglePopup()">
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
+
+    </div>
+
+    <div class="barra-horizontal"></div>
+    <img src="PROMOCAO/Aproveitar!.png" alt="Imagem Decorativa" class="imagem-decorativa">
+
+    <div class="amor-container">
+        <span class="amor"><i class="fas fa-truck" style="color: #FF914D; margin-right: 8px;"></i>FRETE GRATÍS A <br> PARTIR DE 100,00</span>
+        <span class="amor"><i class="fas fa-credit-card" style="color: #FF914D; margin-right: 8px;"></i>PARCELAMENTO <br> EM ATÉ 5X SEM JUROS</span>
+        <span class="amor"><i class="fas fa-clock" style="color: #FF914D; margin-right: 8px;"></i>ATÉ 7 DIAS <br> PARA DEVOLVER A COMPRA</span>
+        <span class="amor"><i class="fas fa-check" style="color: #FF914D; margin-right: 8px;"></i>SITE CONFÍAVEL <br> COMPRE COM SEGURANÇA</span>
+    </div>
+    
+    <main>
+        <section id="produtos">
+            <h2>EXPLORE AS NOVIDADES!</h2>
+            <div class="produtos-container">
+                <div class="produto">
+                    <img src="https://grupokyly.vteximg.com.br/arquivos/ids/255957-1000-1000/1000640_6826.jpg?v=638635759638100000" alt="Produto 1">
+                    <h3>CONJUNTO INFANTIL MENINO</h3>
+                    <p>A partir de: R$ 89,90 <br> 3x DE R$ 29,95</p>
+                    <a href="home/compra/compra.html" class="btn">COMPRAR</a>
+                </div>
+                <div class="produto">
+                    <img src="https://grupokyly.vteximg.com.br/arquivos/ids/255968-1000-1000/1000664_0001.jpg?v=638635767502770000" alt="Produto 2">
+                    <h3>CONJUNTO INFANTIL MENINA</h3>
+                    <p>A partir de: R$ 89,90 <br> 3x DE R$ 29,95</p>
+                    <a href="home/compra-2/compra2.html"  class="btn">COMPRAR</a>
+                </div>
+                <div class="produto">
+                    <img src="https://grupokyly.vteximg.com.br/arquivos/ids/255801-1000-1000/1000531_0001.jpg?v=638635639710400000" alt="Produto 3">
+                    <h3>VESTIDO INFANTIL <br> MENINA</h3>
+                    <p>A partir de: R$ 65,90 <br> 3x DE R$ 21,95</p>
+                    <a href="home/compra-3/compra3.html"  class="btn">COMPRAR</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Nossa loja é voltada para produtos infantis e está no mercado desde 09/10/2024.</p>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Email: contatopequenosencantos@gmail.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pequenos Encantos. Todos os direitos reservados.</p>
+    </footer>
+
+
+    <div id="popup" class="popup">
+        <div class="popup-conteudo">
+            <h2>CATEGORIAS</h2>
+                    <p>
+                        <a href="#" class="underline">BÁSICOS</a><br>
+                        <a href="#" class="underline">BERMUDAS</a><br>
+                        <a href="#" class="underline">BLUSAS</a><br>
+                        <a href="#" class="underline">CALÇAS</a><br>
+                        <a href="#" class="underline">CAMISETAS E REGATAS</a><br>
+                        <a href="#" class="underline">CASACOS E JAQUETAS</a><br>
+                        <a href="#" class="underline">CONJUNTO INVERNO</a><br>
+                        <a href="#" class="underline">CONJUNTO VERÃO</a><br>
+                        <a href="#" class="underline">LEGGINGS</a><br>
+                        <a href="#" class="underline">PIJAMAS</a><br>
+                        <a href="#" class="underline">VESTIDO DE INVERNO</a><br>
+                        <a href="#" class="underline">VESTIDO DE VERÃO</a><br>
+                        <br>
+                        <span class="ver-todos">ver todos!</span>
+                    </p>
+                </div>
+            </div>
+ 
+<div id="popup-pesquisa" class="popup">
+    <div class="popup-conteudo">
+        <h2>TEMAS MAIS BUSCADOS</h2>
+        <div class="categoria">
+            <span class="numero">1</span>
+            <a href="#" class="underline">BLUSA</a>
+        </div>
+        <div class="categoria">
+            <span class="numero">2</span>
+            <a href="#" class="underline">CONJUNTO VERÃO</a>
+        </div>
+        <div class="categoria">
+            <span class="numero">3</span>
+            <a href="#" class="underline">BODY</a>
+        </div>
+        <div class="categoria">
+            <span class="numero">4</span>
+            <a href="#" class="underline">REGATA</a>
+        </div>
+        <div class="categoria">
+            <span class="numero">5</span>
+            <a href="#" class="underline">SHORT</a>
+        </div>
+        <div class="categoria">
+            <span class="numero">6</span>
+            <a href="#" class="underline">CALÇA</a>
+        </div>
+        <div class="categoria">
+            <span class="numero">7</span>
+            <a href="#" class="underline">CAMISETA</a>
+        </div>
+        <div class="categoria">
+            <span class="numero">8</span>
+            <a href="#" class="underline">T-SHIRT</a>
+        </div>
+        <div class="categoria">
+            <span class="numero">9</span>
+            <a href="#" class="underline">MANGA LONGA</a>
+        </div>
+        <div class="categoria">
+            <span class="numero">10</span>
+            <a href="#" class="underline">CASACO</a>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+
+</body>
+</html>
